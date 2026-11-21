@@ -12,14 +12,13 @@ public class imagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nome", nullable = false, columnDefinition = "String")
+    @Column(name = "nome", nullable = false)
     private String nome;
 
-    @Column(name = "tipo", nullable = false, columnDefinition = "String")
+    @Column(name = "tipo", nullable = false)
     private String tipo;
 
-    @Lob
-    @Column(name = "base64", nullable = false, columnDefinition = "String")
+    @Column(name = "base64", nullable = false, columnDefinition = "TEXT")
     private String base64;
 
 
